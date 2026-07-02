@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IFX Marketing · Trading & Fintech Agency</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    /* ----- CSS Variables & Reset ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #0EA5E9;
+      --secondary: #14B8A6;
+      --dark: #111827;
+      --light: #FFFFFF;
+      --bg-light: #f5f9ff;
+      --font-inter: 'Inter', sans-serif;
+      --font-poppins: 'Poppins', sans-serif;
+      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.01);
+      --shadow-md: 0 20px 40px -12px rgba(0, 0, 0, 0.06);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --transition: 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-inter);
+      background: var(--bg-light);
+      color: var(--dark);
+      line-height: 1.5;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-poppins);
+      letter-spacing: -0.02em;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ----- Top Header (light bar) ----- */
+    .top-header {
+      background: var(--light);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+      padding: 10px 0;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .top-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+    }
+
+    .logo-text {
+      font-family: var(--font-poppins);
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--dark);
+      letter-spacing: -0.3px;
+    }
+
+    .logo-text span {
+      color: var(--primary);
+    }
+
+    .work-hours {
+      font-size: 0.78rem;
+      color: #4b5563;
+      background: #f1f5f9;
+      padding: 4px 16px;
+      border-radius: 30px;
+      white-space: nowrap;
+    }
+
+    .social-icons a {
+      color: #6b7280;
+      margin: 0 6px;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: var(--primary);
+    }
+
+    /* ----- Navbar (sticky + blur) ----- */
+    .navbar {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(14px) saturate(180%);
+      -webkit-backdrop-filter: blur(14px) saturate(180%);
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 14px 0;
+      transition: padding 0.25s, box-shadow 0.25s;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .navbar.scrolled {
+      padding: 8px 0;
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
+    }
+
+    .navbar .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      list-style: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--dark);
+      transition: color 0.2s;
+      position: relative;
+    }
+
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      width: 26px;
+      height: 2.5px;
+      background: var(--dark);
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ----- Hero Section ----- */
+    .hero {
+      padding: 40px 0 50px;
+      position: relative;
+      background: var(--bg-light);
+      overflow: hidden;
+    }
+
+    /* floating abstract shapes */
+    .hero-shapes {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .hero-shapes .shape {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(14, 165, 233, 0.06), transparent 70%);
+      filter: blur(50px);
+    }
+
+    .shape-1 {
+      width: 400px;
+      height: 400px;
+      top: -120px;
+      right: -100px;
+    }
+
+    .shape-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -60px;
+      left: -80px;
+      background: radial-gradient(circle, rgba(20, 184, 166, 0.06), transparent 70%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(14, 165, 233, 0.08);
+      color: var(--primary);
+      padding: 6px 22px;
+      border-radius: 40px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 18px;
+      font-weight: 700;
+    }
+
+    .hero h1 .highlight {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: #374151;
+      max-width: 500px;
+      margin-bottom: 28px;
+      line-height: 1.7;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      border-radius: 60px;
+      font-weight: 600;
+      border: none;
+      background: var(--light);
+      color: var(--dark);
+      box-shadow: var(--shadow-sm);
+      transition: 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.95rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
+    }
+
+    .btn-primary:hover {
+      background: #0c8fc9;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(14, 165, 233, 0.3);
+    }
+
+    .btn-outline {
+      border: 1.5px solid #e2e8f0;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: rgba(14, 165, 233, 0.02);
+      transform: translateY(-2px);
+    }
+
+    /* hero right image */
+    .hero-image-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 520px;
+      aspect-ratio: 1/0.85;
+      border-radius: var(--radius-xl);
+      background: #e2e8f0;
+      background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.4s;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* ----- Trust Section ----- */
+    .trust {
+      padding: 40px 0;
+      background: var(--light);
+      text-align: center;
+      border-top: 1px solid rgba(0, 0, 0, 0.02);
+    }
+
+    .trust h3 {
+      font-weight: 500;
+      color: #4b5563;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+      margin-bottom: 28px;
+    }
+
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 28px 48px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .logo-item {
+      font-weight: 600;
+      color: #94a3b8;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      padding: 6px 12px;
+      transition: 0.3s;
+      filter: grayscale(1) opacity(0.6);
+    }
+
+    .logo-item:hover {
+      filter: grayscale(0) opacity(1);
+      color: var(--dark);
+      transform: scale(1.06);
+    }
+
+    /* ----- CTA (bottom) ----- */
+    .cta-section {
+      padding: 40px 0 50px;
+      background: var(--light);
+    }
+
+    .cta-card {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: var(--radius-xl);
+      padding: 40px 30px;
+      color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      box-shadow: 0 20px 40px -12px rgba(14, 165, 233, 0.25);
+    }
+
+    .cta-card h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 600;
+    }
+
+    .cta-card .btn {
+      background: white;
+      color: var(--dark);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .cta-card .btn-outline {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.4);
+      color: white;
+    }
+
+    .cta-card .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* ----- Footer (minimal) ----- */
+    .footer {
+      background: var(--dark);
+      color: #cbd5e1;
+      padding: 30px 0 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.02);
+    }
+
+    .footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .footer .logo-text {
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .footer .logo-text span {
+      color: var(--primary);
+    }
+
+    .footer a {
+      color: #94a3b8;
+      text-decoration: none;
+      transition: 0.2s;
+      font-size: 0.9rem;
+    }
+
+    .footer a:hover {
+      color: white;
+    }
+
+    .footer .social-icons a {
+      color: #94a3b8;
+      margin-left: 12px;
+    }
+
+    .footer .social-icons a:hover {
+      color: white;
+    }
+
+    .footer .copy {
+      font-size: 0.8rem;
+      color: #64748b;
+      width: 100%;
+      text-align: center;
+      margin-top: 16px;
+      border-top: 1px solid #2d3748;
+      padding-top: 16px;
+    }
+
+    /* ----- Responsive ----- */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .hero-buttons {
+        justify-content: center;
+      }
+
+      .hero-image {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .top-header .work-hours {
+        display: none;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(12px);
+        padding: 20px;
+        border-radius: var(--radius-lg);
+        position: absolute;
+        top: 64px;
+        left: 16px;
+        right: 16px;
+        box-shadow: var(--shadow-md);
+        gap: 14px;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+
+      .cta-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-grid {
+        gap: 16px 24px;
+      }
+
+      .logo-item {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .btn {
+        padding: 12px 22px;
+        font-size: 0.85rem;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+    }
+
+    /* fade-up helper (JS adds class) */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* floating animation for shapes */
+    @keyframes floatShape {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-16px) rotate(2deg); }
+    }
+
+    .floating {
+      animation: floatShape 7s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOP HEADER ===== -->
+  <header class="top-header">
+    <div class="container">
+      <div class="logo-text">IFX <span>Marketing</span></div>
+      <div class="work-hours"><i class="far fa-clock"></i> Monday – Saturday · 9 AM – 5 PM</div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="logo-text" style="font-size:1.4rem;">IFX <span>Marketing</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-shapes">
+      <div class="shape shape-1 floating"></div>
+      <div class="shape shape-2 floating" style="animation-delay:2s;"></div>
+    </div>
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <span class="hero-badge"><i class="fas fa-chart-line"></i> Marketing That Moves the Markets</span>
+        <h1>
+          Fueling <span class="highlight">Growth</span> for <span class="highlight">Trading</span><br />
+          &amp; Stock Broking Brands
+        </h1>
+        <p>
+          At IFX Marketing, we specialize in digital marketing crafted exclusively for stock trading, investment advisory, forex, and fintech brands. We generate high-quality leads, build credibility, and help businesses scale while staying compliant.
+        </p>
+        <div class="hero-buttons">
+          <a href="tel:+917830085280" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Call</a>
+          <a href="#" class="btn btn-outline"><i class="fas fa-file-invoice"></i> Book a Quote</a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST SECTION ===== -->
+  <section class="trust">
+    <div class="container">
+      <h3>Trusted by more than 200+ companies across the globe</h3>
+      <div class="logo-grid">
+        <span class="logo-item">Binance</span>
+        <span class="logo-item">Coinbase</span>
+        <span class="logo-item">MetaTrader</span>
+        <span class="logo-item">Robinhood</span>
+        <span class="logo-item">FXCM</span>
+        <span class="logo-item">Saxo Bank</span>
+        <span class="logo-item">eToro</span>
+        <span class="logo-item">Plus500</span>
+        <span class="logo-item">Interactive Brokers</span>
+        <span class="logo-item">TD Ameritrade</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION (large rounded image + CTA card) ===== -->
+  <section class="cta-section">
+    <div class="container">
+      <!-- large rounded image placeholder -->
+      <div style="width:100%; aspect-ratio:16/6; border-radius:var(--radius-xl); background:#e2e8f0; margin-bottom:40px; background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop'); background-size:cover; background-position:center; box-shadow:var(--shadow-md); border:1px solid rgba(255,255,255,0.2);"></div>
+
+      <!-- CTA card -->
+      <div class="cta-card fade-up">
+        <div>
+          <h2>Ready to accelerate your brand?</h2>
+          <p style="opacity:0.85; margin-top:4px;">Let's build a strategy that delivers results.</p>
+        </div>
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="tel:+917830085280" class="btn"><i class="fas fa-phone-alt"></i> Book a Call</a>
+          <a href="#" class="btn btn-outline"><i class="fas fa-file-invoice"></i> Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div>
+        <div class="logo-text">IFX <span>Marketing</span></div>
+        <div style="margin-top:6px; font-size:0.85rem; color:#94a3b8;">
+          <a href="tel:+917830085280"><i class="fas fa-phone-alt"></i> +91 7830085280</a>
+        </div>
+      </div>
+      <div style="display:flex; gap:24px; flex-wrap:wrap;">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="copy">© 2025 IFX Marketing. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    (function() {
+      "use strict";
+
+      // --- Navbar blur on scroll ---
+      const navbar = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 30) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
+      // --- Hamburger toggle ---
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('navLinks');
+
+      hamburger.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('open');
+      });
+
+      // Close menu on link click (mobile)
+      navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('open');
+        });
+      });
+
+      // --- Fade Up on scroll (Intersection Observer) ---
+      const fadeElements = document.querySelectorAll('.fade-up');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -30px 0px'
+      });
+
+      fadeElements.forEach(el => observer.observe(el));
+
+      // Also observe hero elements manually (hero badge, heading etc)
+      const heroItems = document.querySelectorAll('.hero-left .hero-badge, .hero-left h1, .hero-left p, .hero-buttons');
+      heroItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(24px)';
+        item.style.transition = `opacity 0.7s ease ${index * 0.1}s, transform 0.7s ease ${index * 0.1}s`;
+        setTimeout(() => {
+          item.style.opacity = '1';
+          item.style.transform = 'translateY(0)';
+        }, 200 + index * 100);
+      });
+
+      // Hero image fade
+      const heroImg = document.querySelector('.hero-image');
+      if (heroImg) {
+        heroImg.style.opacity = '0';
+        heroImg.style.transition = 'opacity 1s ease 0.3s';
+        setTimeout(() => { heroImg.style.opacity = '1'; }, 400);
+      }
+
+      // --- smooth hover for buttons (magnetic light effect) ---
+      document.querySelectorAll('.btn').forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+          const rect = btn.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          btn.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+          btn.style.transform = '';
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
