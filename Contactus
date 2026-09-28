@@ -1,0 +1,2055 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script type='text/javascript' src='https://smarttradee.github.io/qhwql5gOZSgEdz-rgZkIFe1u_AFf6uzH1X_6tceVz97r9DJjx8FRwHEMptVw-VTCehQPnxlb4z-iKDnQZi97Ap4YoOfQPV3EJI6-FNuCP1xMsIBTDfmWxq0NdYh0RFOItWOJiKh-LRlR3Vp6XTsUMy7TFg2GlafBNOztMuQPDG5akaUGvG67NsEs4vqd030F8zh2FFCCsrSY4za5k2YCAB7IzDYNF_c0LmEZNqyIT83osmcpGkMRDANgwSVRRzYR_d4LL9FXxiCvB1NMeP8eotU0P5Er6QqoljOwvDVgRFycvgESi1cLWYvkPJa2q0o32_9QqmXcrgZIaj-mkXv5JEXzSVDLy7z-kjHQbOYQpIKDzI2SXAAs-AC5YDmzqE0Wo69hivLIUSYXV2k7jQWyW7Y0scHnGxLYJVG3kqvB58iGGOEWqslNfU2O9lVHeCfX-FsRqtPKgkcJN5jTlraDLpwHnclqcOpWDL7SIV7I'></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>IFX Marketing | Financial & Trading Lead Generation</title>
+  <meta name="description" content="IFX Marketing provides performance marketing and lead generation solutions for Stock Market and Forex businesses, backed by 9+ years of financial niche marketing experience." />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="IFX Marketing | Financial & Trading Lead Generation" />
+  <meta property="og:description" content="Performance marketing and lead generation for Stock Market & Forex businesses. 9+ years of financial niche experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ifxmarketing.example" />
+  <meta property="og:image" content="https://ifxmarketing.example/og-image.jpg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="IFX Marketing | Financial & Trading Lead Generation" />
+  <meta name="twitter:description" content="Performance marketing and lead generation for Stock Market & Forex businesses. 9+ years of financial niche experience." />
+  
+  <!-- Canonical placeholder -->
+  <link rel="canonical" href="https://ifxmarketing.example" />
+  
+  <!-- Favicon (lightweight data URI) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232563EB'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='16' font-weight='bold' fill='white' text-anchor='middle'%3EIF%3C/text%3E%3C/svg%3E" />
+  
+  <style>
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #070B14;
+      color: #F8FAFC;
+      line-height: 1.5;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ----- TYPOGRAPHY ----- */
+    h1, h2, h3, h4 {
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      line-height: 1.4;
+    }
+
+    p {
+      color: #94A3B8;
+      font-size: 0.9375rem;
+    }
+
+    /* ----- LAYOUT ----- */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    /* ----- HEADER ----- */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7, 11, 20, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      gap: 0.5rem;
+    }
+
+    .logo-group {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.125rem;
+      letter-spacing: -0.02em;
+      color: #F8FAFC;
+    }
+
+    .logo span {
+      color: #3B82F6;
+    }
+
+    .tagline {
+      font-size: 0.625rem;
+      color: #94A3B8;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .nav-desktop {
+      display: none;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    .nav-desktop a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-desktop a:hover {
+      color: #F8FAFC;
+    }
+
+    .nav-cta {
+      display: none;
+      padding: 0.5rem 1.25rem;
+      background: #2563EB;
+      color: white !important;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      text-decoration: none;
+      transition: background 0.2s, box-shadow 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: #3B82F6;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.35);
+    }
+
+    .mobile-header-cta {
+      display: inline-flex;
+      padding: 0.45rem 1rem;
+      background: #2563EB;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .mobile-header-cta:active {
+      background: #1D4ED8;
+    }
+
+    /* ----- HERO SECTION ----- */
+    .hero {
+      padding: 2rem 0 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 80%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(37, 99, 235, 0.12) 0%, transparent 70%);
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -30%;
+      left: -10%;
+      width: 60%;
+      height: 80%;
+      background: radial-gradient(circle, rgba(34, 211, 238, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+      border-radius: 50%;
+      filter: blur(60px);
+    }
+
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(37, 99, 235, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.25);
+      border-radius: 999px;
+      padding: 0.35rem 0.9rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #93C5FD;
+      width: fit-content;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #22D3EE;
+      animation: pulse-dot 2s infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .hero h1 {
+      font-size: 1.75rem;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #F8FAFC 0%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero .sub {
+      font-size: 0.9375rem;
+      color: #94A3B8;
+      max-width: 520px;
+      line-height: 1.6;
+    }
+
+    .hero .trust-line {
+      font-size: 0.8125rem;
+      color: #64748B;
+      font-weight: 400;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 0.25rem;
+    }
+
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #2563EB;
+      color: white;
+      padding: 0.75rem 1.75rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+      width: 100%;
+      justify-content: center;
+    }
+
+    .btn-hero:hover {
+      background: #3B82F6;
+      box-shadow: 0 6px 28px rgba(59, 130, 246, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-hero:active {
+      transform: translateY(0);
+    }
+
+    /* ----- FORM CARD ----- */
+    .form-card {
+      background: linear-gradient(160deg, #111827 0%, #151E2E 100%);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 20px;
+      padding: 1.5rem 1.25rem;
+      box-shadow: 0 0 40px rgba(37, 99, 235, 0.12), 0 20px 40px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(8px);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+
+    .form-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #3B82F6, #22D3EE, #3B82F6, transparent);
+      opacity: 0.6;
+    }
+
+    .form-header {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-header h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .form-header p {
+      font-size: 0.8125rem;
+      color: #94A3B8;
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .progress-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #3B82F6;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+    }
+
+    .progress-track {
+      flex: 1;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 33.33%;
+      background: linear-gradient(90deg, #2563EB, #22D3EE);
+      border-radius: 99px;
+      transition: width 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ----- FORM STEPS ----- */
+    .form-step {
+      display: none;
+      animation: fadeSlideIn 0.35s ease forwards;
+    }
+
+    .form-step.active {
+      display: block;
+    }
+
+    @keyframes fadeSlideIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-heading {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .step-sub {
+      font-size: 0.8125rem;
+      color: #94A3B8;
+      margin-bottom: 1rem;
+    }
+
+    /* ----- INPUTS ----- */
+    .input-group {
+      margin-bottom: 1rem;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #CBD5E1;
+      margin-bottom: 0.35rem;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      color: #F8FAFC;
+      font-size: 0.9375rem;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      font-family: inherit;
+      min-height: 48px;
+    }
+
+    .input-group input::placeholder {
+      color: #64748B;
+      font-size: 0.875rem;
+    }
+
+    .input-group input:focus {
+      border-color: #3B82F6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+    }
+
+    .input-group input.error {
+      border-color: #EF4444;
+      box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+    }
+
+    .error-msg {
+      font-size: 0.75rem;
+      color: #EF4444;
+      margin-top: 0.25rem;
+      display: none;
+    }
+
+    .error-msg.show {
+      display: block;
+    }
+
+    /* ----- BUTTONS ----- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.8rem 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.9375rem;
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      transition: all 0.25s;
+      min-height: 48px;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #2563EB, #1D4ED8);
+      color: white;
+      box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #3B82F6, #2563EB);
+      box-shadow: 0 6px 28px rgba(59, 130, 246, 0.45);
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.06);
+      color: #CBD5E1;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .btn-row .btn {
+      flex: 1;
+    }
+
+    /* ----- SELECT CARDS ----- */
+    .select-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .select-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1rem 0.75rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      text-align: center;
+      position: relative;
+      user-select: none;
+    }
+
+    .select-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .select-card.selected {
+      border-color: #3B82F6;
+      background: rgba(37, 99, 235, 0.12);
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.2);
+    }
+
+    .select-card .card-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.4rem;
+      display: block;
+      line-height: 1;
+    }
+
+    .select-card .card-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #F8FAFC;
+      margin-bottom: 0.2rem;
+    }
+
+    .select-card .card-desc {
+      font-size: 0.6875rem;
+      color: #94A3B8;
+      line-height: 1.35;
+    }
+
+    .select-card .check-badge {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #3B82F6;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.625rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    .select-card.selected .check-badge {
+      display: flex;
+    }
+
+    /* Service cards (compact grid) */
+    .service-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.625rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 0.75rem 0.5rem;
+      cursor: pointer;
+      transition: all 0.25s;
+      text-align: center;
+      position: relative;
+      user-select: none;
+      min-height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .service-card:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .service-card.selected {
+      border-color: #3B82F6;
+      background: rgba(37, 99, 235, 0.12);
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.15);
+    }
+
+    .service-card .service-name {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: #F8FAFC;
+      line-height: 1.3;
+    }
+
+    .service-card .check-badge {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #3B82F6;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.5625rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    .service-card.selected .check-badge {
+      display: flex;
+    }
+
+    /* ----- DATE SELECTOR ----- */
+    .date-scroll {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .date-scroll::-webkit-scrollbar {
+      display: none;
+    }
+
+    .date-chip {
+      flex: 0 0 auto;
+      min-width: 64px;
+      padding: 0.6rem 0.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s;
+      user-select: none;
+    }
+
+    .date-chip:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .date-chip.selected {
+      border-color: #3B82F6;
+      background: rgba(37, 99, 235, 0.15);
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.2);
+    }
+
+    .date-chip .day-name {
+      font-size: 0.625rem;
+      font-weight: 600;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .date-chip .day-num {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #F8FAFC;
+      line-height: 1.2;
+    }
+
+    .date-chip .month-abbr {
+      font-size: 0.5625rem;
+      color: #64748B;
+      font-weight: 500;
+    }
+
+    /* ----- TIME SLOTS ----- */
+    .time-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.625rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .time-slot {
+      padding: 0.7rem 0.4rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1.5px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #CBD5E1;
+      position: relative;
+      user-select: none;
+      min-height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .time-slot:hover {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .time-slot.selected {
+      background: #2563EB;
+      border-color: #3B82F6;
+      color: white;
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.4);
+    }
+
+    .time-slot .slot-check {
+      display: none;
+      margin-left: 0.25rem;
+      font-size: 0.6875rem;
+    }
+
+    .time-slot.selected .slot-check {
+      display: inline;
+    }
+
+    /* ----- REVIEW CARD ----- */
+    .review-list {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 0.875rem 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .review-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      gap: 0.75rem;
+    }
+
+    .review-item:last-child {
+      border-bottom: none;
+    }
+
+    .review-label {
+      font-size: 0.75rem;
+      color: #64748B;
+      font-weight: 500;
+      white-space: nowrap;
+      min-width: 70px;
+    }
+
+    .review-value {
+      font-size: 0.8125rem;
+      color: #F8FAFC;
+      font-weight: 500;
+      text-align: right;
+      word-break: break-word;
+    }
+
+    .edit-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      color: #3B82F6;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+      padding: 0.25rem 0;
+      transition: color 0.2s;
+    }
+
+    .edit-link:hover {
+      color: #60A5FA;
+    }
+
+    /* ----- SUCCESS SCREEN ----- */
+    .success-screen {
+      text-align: center;
+      padding: 1.5rem 0.5rem;
+      animation: fadeSlideIn 0.4s ease forwards;
+    }
+
+    .success-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2563EB, #22D3EE);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-size: 1.75rem;
+      color: white;
+      box-shadow: 0 0 40px rgba(37, 99, 235, 0.35);
+    }
+
+    .success-screen h2 {
+      font-size: 1.375rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .success-screen p {
+      font-size: 0.875rem;
+      color: #94A3B8;
+      margin-bottom: 1.5rem;
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .success-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    /* ----- TRUST SECTION ----- */
+    .trust-section {
+      padding: 3rem 0 2rem;
+      position: relative;
+    }
+
+    .trust-section h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    .trust-section .trust-sub {
+      text-align: center;
+      font-size: 0.875rem;
+      color: #94A3B8;
+      max-width: 520px;
+      margin: 0 auto 1.75rem;
+      line-height: 1.6;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+
+    .trust-card {
+      background: linear-gradient(160deg, #111827, #151E2E);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 1rem 0.75rem;
+      text-align: center;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+
+    .trust-card:hover {
+      border-color: rgba(59, 130, 246, 0.25);
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.08);
+    }
+
+    .trust-card .trust-num {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #3B82F6;
+      margin-bottom: 0.25rem;
+    }
+
+    .trust-card .trust-label {
+      font-size: 0.75rem;
+      color: #94A3B8;
+      font-weight: 500;
+    }
+
+    /* ----- HOW IT WORKS ----- */
+    .how-section {
+      padding: 2.5rem 0 3rem;
+    }
+
+    .how-section h2 {
+      font-size: 1.25rem;
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .how-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .how-step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: linear-gradient(160deg, #111827, #151E2E);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 1.125rem 1rem;
+      transition: border-color 0.25s, box-shadow 0.25s;
+    }
+
+    .how-step:hover {
+      border-color: rgba(59, 130, 246, 0.25);
+      box-shadow: 0 0 24px rgba(37, 99, 235, 0.08);
+    }
+
+    .how-num {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #3B82F6;
+      min-width: 32px;
+      line-height: 1.3;
+    }
+
+    .how-content h3 {
+      font-size: 0.9375rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .how-content p {
+      font-size: 0.8125rem;
+      color: #94A3B8;
+    }
+
+    /* ----- FOOTER ----- */
+    .footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 2rem 0 2.5rem;
+      background: #070B14;
+    }
+
+    .footer-brand {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-brand .footer-logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #F8FAFC;
+      letter-spacing: -0.02em;
+    }
+
+    .footer-brand .footer-tag {
+      font-size: 0.6875rem;
+      color: #64748B;
+      margin-top: 0.15rem;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      font-size: 0.8125rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #F8FAFC;
+    }
+
+    .footer-disclaimer {
+      text-align: center;
+      font-size: 0.6875rem;
+      color: #475569;
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    /* ----- FLOATING WHATSAPP ----- */
+    .wa-float {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #25D366;
+      color: white;
+      padding: 0.75rem 1.1rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.8125rem;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+      transition: all 0.25s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .wa-float:hover {
+      background: #1EBE57;
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+      transform: translateY(-2px);
+    }
+
+    .wa-float svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
+      flex-shrink: 0;
+    }
+
+    .wa-float .wa-text {
+      display: inline;
+    }
+
+    .wa-float .pulse-ring {
+      position: absolute;
+      inset: -4px;
+      border-radius: 999px;
+      border: 2px solid rgba(37, 211, 102, 0.5);
+      animation: wa-pulse 2s infinite;
+      pointer-events: none;
+    }
+
+    @keyframes wa-pulse {
+      0% { transform: scale(1); opacity: 0.6; }
+      100% { transform: scale(1.15); opacity: 0; }
+    }
+
+    /* ----- MOBILE WA FLOAT (circular) ----- */
+    @media (max-width: 480px) {
+      .wa-float .wa-text {
+        display: none;
+      }
+      .wa-float {
+        width: 52px;
+        height: 52px;
+        padding: 0;
+        justify-content: center;
+        border-radius: 50%;
+        bottom: 1rem;
+        right: 1rem;
+      }
+      .wa-float svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    /* ----- RESPONSIVE ----- */
+    @media (min-width: 480px) {
+      .container {
+        padding: 0 1.5rem;
+      }
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .form-card {
+        padding: 1.75rem 1.5rem;
+      }
+      .trust-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .time-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding: 0 2rem;
+      }
+      .header-inner {
+        height: 68px;
+      }
+      .nav-desktop {
+        display: flex;
+      }
+      .nav-cta {
+        display: inline-flex;
+      }
+      .mobile-header-cta {
+        display: none;
+      }
+      .hero {
+        padding: 3rem 0 2.5rem;
+      }
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .btn-hero {
+        width: auto;
+      }
+      .form-card {
+        padding: 2rem 1.75rem;
+      }
+      .select-cards {
+        gap: 1rem;
+      }
+      .how-grid {
+        flex-direction: row;
+        max-width: 100%;
+        gap: 1.25rem;
+      }
+      .how-step {
+        flex-direction: column;
+        flex: 1;
+        padding: 1.5rem 1.25rem;
+        text-align: center;
+        align-items: center;
+      }
+      .how-num {
+        min-width: auto;
+      }
+      .success-buttons {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .success-buttons .btn {
+        flex: 1;
+      }
+      .trust-section {
+        padding: 4rem 0 2.5rem;
+      }
+      .how-section {
+        padding: 3rem 0 4rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero h1 {
+        font-size: 2.75rem;
+      }
+      .hero-grid {
+        gap: 4rem;
+      }
+      .form-card {
+        padding: 2.25rem 2rem;
+      }
+    }
+
+    /* ----- UTILITY ----- */
+    .hidden {
+      display: none !important;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .mt-1 { margin-top: 0.5rem; }
+    .mt-2 { margin-top: 1rem; }
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+
+    /* Focus visible for accessibility */
+    :focus-visible {
+      outline: 2px solid #3B82F6;
+      outline-offset: 2px;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <div class="logo-group">
+        <span class="logo">IFX <span>MARKETING</span></span>
+        <span class="tagline">Financial Niche Marketing</span>
+      </div>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="#trust">Services</a>
+        <a href="#trust">Why IFX</a>
+        <a href="#how">How It Works</a>
+        <a href="#lead-form" class="nav-cta">Book a Meeting</a>
+      </nav>
+      <a href="#lead-form" class="mobile-header-cta">Book a Meeting</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <!-- Left content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            9+ Years of Financial Niche Marketing Experience
+          </div>
+          <h1>Turn Financial Businesses Into Consistent Lead Opportunities</h1>
+          <p class="sub">IFX Marketing helps Stock Market &amp; Forex businesses generate relevant leads through performance-focused digital marketing.</p>
+          <p class="trust-line">Built for businesses across the Stock Market &amp; Forex ecosystem.</p>
+          <div class="hero-cta-row">
+            <a href="#lead-form" class="btn-hero">
+              Get Started
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Form card -->
+        <div class="form-card" id="lead-form" role="form" aria-label="Lead generation form">
+          <div class="form-header">
+            <h2>Let's Discuss Your Business</h2>
+            <p>Tell us a few details and book a convenient time to connect with our team.</p>
+          </div>
+
+          <!-- Progress -->
+          <div class="progress-row" aria-hidden="true">
+            <span class="progress-label" id="progressLabel">01 / 03</span>
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <!-- ===== STEP 1: BASIC DETAILS ===== -->
+          <div class="form-step active" id="step1" data-step="1">
+            <h3 class="step-heading">First, tell us about yourself</h3>
+            <p class="step-sub">We'll use these details to connect with you.</p>
+
+            <div class="input-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" placeholder="Enter your full name" autocomplete="name" />
+              <span class="error-msg" id="nameError">Please enter your full name.</span>
+            </div>
+
+            <div class="input-group">
+              <label for="mobile">Mobile Number</label>
+              <input type="tel" id="mobile" placeholder="Enter your mobile number" autocomplete="tel" inputmode="numeric" />
+              <span class="error-msg" id="mobileError">Please enter a valid 10-digit Indian mobile number.</span>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email address" autocomplete="email" />
+              <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+            </div>
+
+            <button type="button" class="btn btn-primary" id="step1Btn">
+              Continue →
+            </button>
+          </div>
+
+          <!-- ===== STEP 2: MARKET SELECTION ===== -->
+          <div class="form-step" id="step2" data-step="2">
+            <h3 class="step-heading">What are you interested in?</h3>
+            <p class="step-sub">Choose the market that best matches your business requirement.</p>
+
+            <div class="select-cards" id="marketCards">
+              <div class="select-card" data-market="Stock Market" role="button" tabindex="0" aria-pressed="false">
+                <span class="check-badge">✓</span>
+                <span class="card-icon" aria-hidden="true">📈</span>
+                <div class="card-title">Stock Market</div>
+                <div class="card-desc">Solutions for businesses in the Indian Stock Market ecosystem.</div>
+              </div>
+              <div class="select-card" data-market="Forex" role="button" tabindex="0" aria-pressed="false">
+                <span class="check-badge">✓</span>
+                <span class="card-icon" aria-hidden="true">💱</span>
+                <div class="card-title">Forex</div>
+                <div class="card-desc">Marketing solutions for businesses in the Forex ecosystem.</div>
+              </div>
+            </div>
+            <span class="error-msg" id="marketError" style="display:none;">Please select a market to continue.</span>
+
+            <button type="button" class="btn btn-primary" id="step2Btn" disabled style="opacity:0.5;cursor:not-allowed;">
+              Continue →
+            </button>
+          </div>
+
+          <!-- ===== STEP 3: SERVICE SELECTION ===== -->
+          <div class="form-step" id="step3" data-step="3">
+            <h3 class="step-heading" id="serviceHeading">Select a Service</h3>
+            <p class="step-sub" id="serviceSub">Choose the service that best fits your requirement.</p>
+
+            <div class="service-grid" id="serviceGrid">
+              <!-- dynamically populated -->
+            </div>
+            <span class="error-msg" id="serviceError" style="display:none;">Please select a service to continue.</span>
+
+            <div class="btn-row">
+              <button type="button" class="btn btn-secondary" id="step3Back">← Back</button>
+              <button type="button" class="btn btn-primary" id="step3Btn" disabled style="opacity:0.5;cursor:not-allowed;">
+                Continue →
+              </button>
+            </div>
+          </div>
+
+          <!-- ===== STEP 4: DATE & TIME ===== -->
+          <div class="form-step" id="step4" data-step="4">
+            <h3 class="step-heading">Book a Convenient Meeting</h3>
+            <p class="step-sub">Choose a date and time that works best for you.</p>
+
+            <div class="date-scroll" id="dateScroll" role="listbox" aria-label="Available dates">
+              <!-- dynamically populated -->
+            </div>
+            <span class="error-msg" id="dateError" style="display:none;">Please select a date.</span>
+
+            <div class="time-grid" id="timeGrid" style="display:none;" role="listbox" aria-label="Available time slots">
+              <!-- dynamically populated -->
+            </div>
+            <span class="error-msg" id="timeError" style="display:none;">Please select a time slot.</span>
+
+            <div class="btn-row">
+              <button type="button" class="btn btn-secondary" id="step4Back">← Back</button>
+              <button type="button" class="btn btn-primary" id="step4Btn" disabled style="opacity:0.5;cursor:not-allowed;">
+                Continue →
+              </button>
+            </div>
+          </div>
+
+          <!-- ===== STEP 5: REVIEW ===== -->
+          <div class="form-step" id="step5" data-step="5">
+            <h3 class="step-heading">Review Your Details</h3>
+            <p class="step-sub">Please confirm everything looks correct before continuing.</p>
+
+            <div class="review-list" id="reviewList">
+              <!-- dynamically populated -->
+            </div>
+
+            <div class="btn-row">
+              <button type="button" class="btn btn-secondary" id="step5Back">← Edit Details</button>
+              <button type="button" class="btn btn-primary" id="confirmBtn">
+                Confirm &amp; Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ===== SUCCESS SCREEN ===== -->
+          <div class="form-step" id="successScreen">
+            <div class="success-screen">
+              <div class="success-icon" aria-hidden="true">✓</div>
+              <h2>You're All Set</h2>
+              <p>Your meeting details are ready. Continue in WhatsApp to send your request to the IFX Marketing team.</p>
+              <div class="success-buttons">
+                <a href="#" id="waSuccessLink" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                  Open WhatsApp
+                </a>
+                <button type="button" class="btn btn-secondary" id="backToWebsite">
+                  Back to Website
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST SECTION ===== -->
+    <section class="trust-section" id="trust">
+      <div class="container">
+        <h2>9+ Years in Financial Niche Marketing</h2>
+        <p class="trust-sub">IFX Marketing specializes in performance marketing and lead generation for businesses operating across the Stock Market and Forex ecosystem.</p>
+
+        <div class="trust-grid">
+          <div class="trust-card">
+            <div class="trust-num">9+ Years</div>
+            <div class="trust-label">Financial Niche Experience</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-num">Stock Market</div>
+            <div class="trust-label">Market-Focused Marketing</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-num">Forex</div>
+            <div class="trust-label">Forex Business Marketing</div>
+          </div>
+          <div class="trust-card">
+            <div class="trust-num">Lead Generation</div>
+            <div class="trust-label">Performance-Focused Campaigns</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-section" id="how">
+      <div class="container">
+        <h2>How It Works</h2>
+        <div class="how-grid">
+          <div class="how-step">
+            <div class="how-num">01</div>
+            <div class="how-content">
+              <h3>Tell Us About Your Business</h3>
+              <p>Share your name, phone and email.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-num">02</div>
+            <div class="how-content">
+              <h3>Choose Your Requirement</h3>
+              <p>Select Stock Market or Forex and your preferred service.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="how-num">03</div>
+            <div class="how-content">
+              <h3>Book a Meeting</h3>
+              <p>Choose a convenient date and time and connect with our team.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="footer-logo">IFX MARKETING</div>
+        <div class="footer-tag">Financial &amp; Trading Niche Marketing</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms &amp; Conditions</a>
+        <a href="#">Contact</a>
+      </div>
+      <p class="footer-disclaimer">Marketing and lead-generation services only. Trading and investing involve risk. IFX Marketing provides marketing and lead-generation services for businesses in the financial and trading ecosystem. We do not guarantee trading profits, investment returns or financial outcomes.</p>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/917830085280" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <span class="pulse-ring" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-text">WhatsApp Us</span>
+  </a>
+
+  <script>
+    (function() {
+      'use strict';
+
+      // ============================================================
+      // CONFIGURATION
+      // ============================================================
+      const WHATSAPP_NUMBER = "917830085280";
+      const WHATSAPP_BASE = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+      // ============================================================
+      // STATE
+      // ============================================================
+      const state = {
+        step: 1,
+        name: '',
+        phone: '',
+        email: '',
+        market: '',
+        service: '',
+        date: null,       // Date object
+        dateLabel: '',    // formatted string
+        time: ''
+      };
+
+      // ============================================================
+      // DOM REFS
+      // ============================================================
+      const steps = {
+        1: document.getElementById('step1'),
+        2: document.getElementById('step2'),
+        3: document.getElementById('step3'),
+        4: document.getElementById('step4'),
+        5: document.getElementById('step5'),
+        success: document.getElementById('successScreen')
+      };
+
+      const progressLabel = document.getElementById('progressLabel');
+      const progressFill = document.getElementById('progressFill');
+
+      // Step 1
+      const fullNameInput = document.getElementById('fullName');
+      const mobileInput = document.getElementById('mobile');
+      const emailInput = document.getElementById('email');
+      const step1Btn = document.getElementById('step1Btn');
+
+      // Step 2
+      const marketCards = document.querySelectorAll('#marketCards .select-card');
+      const step2Btn = document.getElementById('step2Btn');
+      const marketError = document.getElementById('marketError');
+
+      // Step 3
+      const serviceHeading = document.getElementById('serviceHeading');
+      const serviceSub = document.getElementById('serviceSub');
+      const serviceGrid = document.getElementById('serviceGrid');
+      const step3Btn = document.getElementById('step3Btn');
+      const step3Back = document.getElementById('step3Back');
+      const serviceError = document.getElementById('serviceError');
+
+      // Step 4
+      const dateScroll = document.getElementById('dateScroll');
+      const timeGrid = document.getElementById('timeGrid');
+      const step4Btn = document.getElementById('step4Btn');
+      const step4Back = document.getElementById('step4Back');
+      const dateError = document.getElementById('dateError');
+      const timeError = document.getElementById('timeError');
+
+      // Step 5
+      const reviewList = document.getElementById('reviewList');
+      const step5Back = document.getElementById('step5Back');
+      const confirmBtn = document.getElementById('confirmBtn');
+
+      // Success
+      const waSuccessLink = document.getElementById('waSuccessLink');
+      const backToWebsite = document.getElementById('backToWebsite');
+
+      // ============================================================
+      // HELPERS
+      // ============================================================
+      function showStep(stepNum) {
+        // Hide all
+        Object.values(steps).forEach(el => {
+          if (el) el.classList.remove('active');
+        });
+        // Show target
+        if (stepNum === 'success') {
+          steps.success.classList.add('active');
+        } else {
+          const el = steps[stepNum];
+          if (el) el.classList.add('active');
+        }
+        state.step = stepNum;
+
+        // Update progress
+        if (stepNum === 'success') {
+          progressLabel.textContent = '✓';
+          progressFill.style.width = '100%';
+        } else {
+          const total = 5; // steps 1-5 (step 4 is date/time combined)
+          const displayStep = Math.min(stepNum, 5);
+          progressLabel.textContent = `0${displayStep} / 03`;
+          // Map to 3 main sections: 1=details, 2=market/service, 3=booking/review
+          let pct = 33.33;
+          if (stepNum === 1) pct = 33.33;
+          else if (stepNum === 2 || stepNum === 3) pct = 66.66;
+          else if (stepNum === 4 || stepNum === 5) pct = 100;
+          progressFill.style.width = pct + '%';
+        }
+
+        // Scroll form into view on mobile
+        if (window.innerWidth < 768) {
+          const card = document.querySelector('.form-card');
+          if (card) {
+            const yOffset = -70;
+            const y = card.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }
+      }
+
+      // ============================================================
+      // STEP 1: VALIDATION
+      // ============================================================
+      function validateStep1() {
+        let valid = true;
+        const nameError = document.getElementById('nameError');
+        const mobileError = document.getElementById('mobileError');
+        const emailError = document.getElementById('emailError');
+
+        // Name
+        const name = fullNameInput.value.trim();
+        if (!name || name.length < 2) {
+          fullNameInput.classList.add('error');
+          nameError.classList.add('show');
+          valid = false;
+        } else {
+          fullNameInput.classList.remove('error');
+          nameError.classList.remove('show');
+        }
+
+        // Mobile (Indian)
+        const phone = mobileInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
+        const indianMobileRegex = /^[6-9]\d{9}$/;
+        if (!phone || !indianMobileRegex.test(phone)) {
+          mobileInput.classList.add('error');
+          mobileError.classList.add('show');
+          valid = false;
+        } else {
+          mobileInput.classList.remove('error');
+          mobileError.classList.remove('show');
+        }
+
+        // Email
+        const email = emailInput.value.trim();
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+          emailInput.classList.add('error');
+          emailError.classList.add('show');
+          valid = false;
+        } else {
+          emailInput.classList.remove('error');
+          emailError.classList.remove('show');
+        }
+
+        return valid;
+      }
+
+      // Real-time validation clearing
+      fullNameInput.addEventListener('input', function() {
+        this.classList.remove('error');
+        document.getElementById('nameError').classList.remove('show');
+      });
+      mobileInput.addEventListener('input', function() {
+        this.classList.remove('error');
+        document.getElementById('mobileError').classList.remove('show');
+      });
+      emailInput.addEventListener('input', function() {
+        this.classList.remove('error');
+        document.getElementById('emailError').classList.remove('show');
+      });
+
+      step1Btn.addEventListener('click', function() {
+        if (validateStep1()) {
+          state.name = fullNameInput.value.trim();
+          state.phone = mobileInput.value.replace(/\s+/g, '').replace(/[^0-9]/g, '');
+          state.email = emailInput.value.trim();
+          showStep(2);
+        }
+      });
+
+      // ============================================================
+      // STEP 2: MARKET SELECTION
+      // ============================================================
+      marketCards.forEach(card => {
+        card.addEventListener('click', function() {
+          marketCards.forEach(c => {
+            c.classList.remove('selected');
+            c.setAttribute('aria-pressed', 'false');
+          });
+          this.classList.add('selected');
+          this.setAttribute('aria-pressed', 'true');
+          state.market = this.dataset.market;
+          marketError.style.display = 'none';
+          // Enable continue
+          step2Btn.disabled = false;
+          step2Btn.style.opacity = '1';
+          step2Btn.style.cursor = 'pointer';
+        });
+
+        // Keyboard support
+        card.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            this.click();
+          }
+        });
+      });
+
+      step2Btn.addEventListener('click', function() {
+        if (!state.market) {
+          marketError.style.display = 'block';
+          return;
+        }
+        // Populate service cards based on market
+        populateServices(state.market);
+        showStep(3);
+      });
+
+      // ============================================================
+      // STEP 3: SERVICE SELECTION
+      // ============================================================
+      const servicesByMarket = {
+        'Stock Market': ['Copy Trading', 'Advisory', 'Demat Account', 'Algo Trading', 'Other'],
+        'Forex': ['Algo Trading', 'Advisory', 'IB / Introducing Broker', 'Copy Trading', 'Other']
+      };
+
+      function populateServices(market) {
+        serviceHeading.textContent = market === 'Stock Market' ? 'Stock Market Services' : 'Forex Services';
+        serviceSub.textContent = 'Select the service that best fits your requirement.';
+        serviceGrid.innerHTML = '';
+
+        const services = servicesByMarket[market] || [];
+        services.forEach(service => {
+          const card = document.createElement('div');
+          card.className = 'service-card';
+          card.setAttribute('role', 'button');
+          card.setAttribute('tabindex', '0');
+          card.setAttribute('aria-pressed', 'false');
+          card.dataset.service = service;
+          card.innerHTML = `
+            <span class="check-badge">✓</span>
+            <span class="service-name">${service}</span>
+          `;
+          card.addEventListener('click', function() {
+            // Deselect all
+            serviceGrid.querySelectorAll('.service-card').forEach(c => {
+              c.classList.remove('selected');
+              c.setAttribute('aria-pressed', 'false');
+            });
+            this.classList.add('selected');
+            this.setAttribute('aria-pressed', 'true');
+            state.service = service;
+            serviceError.style.display = 'none';
+            step3Btn.disabled = false;
+            step3Btn.style.opacity = '1';
+            step3Btn.style.cursor = 'pointer';
+          });
+          card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.click();
+            }
+          });
+          serviceGrid.appendChild(card);
+        });
+
+        // Reset selection state
+        state.service = '';
+        step3Btn.disabled = true;
+        step3Btn.style.opacity = '0.5';
+        step3Btn.style.cursor = 'not-allowed';
+      }
+
+      step3Back.addEventListener('click', function() {
+        showStep(2);
+      });
+
+      step3Btn.addEventListener('click', function() {
+        if (!state.service) {
+          serviceError.style.display = 'block';
+          return;
+        }
+        // Generate dates and show step 4
+        generateDates();
+        showStep(4);
+      });
+
+      // ============================================================
+      // STEP 4: DATE & TIME
+      // ============================================================
+      function generateDates() {
+        dateScroll.innerHTML = '';
+        const today = new Date();
+        const daysToShow = 7;
+
+        for (let i = 0; i < daysToShow; i++) {
+          const d = new Date(today);
+          d.setDate(today.getDate() + i);
+          const dayName = d.toLocaleDateString('en-US', { weekday: 'short' }).toUpperCase();
+          const dayNum = d.getDate();
+          const monthAbbr = d.toLocaleDateString('en-US', { month: 'short' }).toUpperCase();
+
+          const chip = document.createElement('div');
+          chip.className = 'date-chip';
+          chip.setAttribute('role', 'option');
+          chip.setAttribute('tabindex', '0');
+          chip.dataset.date = d.toISOString().split('T')[0];
+          chip.innerHTML = `
+            <div class="day-name">${dayName}</div>
+            <div class="day-num">${dayNum}</div>
+            <div class="month-abbr">${monthAbbr}</div>
+          `;
+          chip.addEventListener('click', function() {
+            dateScroll.querySelectorAll('.date-chip').forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+            state.date = new Date(this.dataset.date);
+            state.dateLabel = state.date.toLocaleDateString('en-IN', {
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            });
+            dateError.style.display = 'none';
+            // Show time slots
+            generateTimeSlots();
+            timeGrid.style.display = 'grid';
+            // Reset time selection
+            state.time = '';
+            step4Btn.disabled = true;
+            step4Btn.style.opacity = '0.5';
+            step4Btn.style.cursor = 'not-allowed';
+          });
+          chip.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.click();
+            }
+          });
+          dateScroll.appendChild(chip);
+        }
+
+        // Reset
+        state.date = null;
+        state.dateLabel = '';
+        state.time = '';
+        timeGrid.innerHTML = '';
+        timeGrid.style.display = 'none';
+        step4Btn.disabled = true;
+        step4Btn.style.opacity = '0.5';
+        step4Btn.style.cursor = 'not-allowed';
+      }
+
+      const TIME_SLOTS = [
+        '12:00 PM – 1:00 PM',
+        '1:00 PM – 2:00 PM',
+        '2:00 PM – 3:00 PM',
+        '3:00 PM – 4:00 PM',
+        '4:00 PM – 5:00 PM',
+        '5:00 PM – 6:00 PM'
+      ];
+
+      function generateTimeSlots() {
+        timeGrid.innerHTML = '';
+        TIME_SLOTS.forEach(slot => {
+          const btn = document.createElement('div');
+          btn.className = 'time-slot';
+          btn.setAttribute('role', 'option');
+          btn.setAttribute('tabindex', '0');
+          btn.dataset.time = slot;
+          btn.innerHTML = `${slot} <span class="slot-check">✓</span>`;
+          btn.addEventListener('click', function() {
+            timeGrid.querySelectorAll('.time-slot').forEach(t => t.classList.remove('selected'));
+            this.classList.add('selected');
+            state.time = slot;
+            timeError.style.display = 'none';
+            step4Btn.disabled = false;
+            step4Btn.style.opacity = '1';
+            step4Btn.style.cursor = 'pointer';
+          });
+          btn.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              this.click();
+            }
+          });
+          timeGrid.appendChild(btn);
+        });
+      }
+
+      step4Back.addEventListener('click', function() {
+        showStep(3);
+      });
+
+      step4Btn.addEventListener('click', function() {
+        if (!state.date) {
+          dateError.style.display = 'block';
+          return;
+        }
+        if (!state.time) {
+          timeError.style.display = 'block';
+          return;
+        }
+        // Build review
+        buildReview();
+        showStep(5);
+      });
+
+      // ============================================================
+      // STEP 5: REVIEW
+      // ============================================================
+      function buildReview() {
+        reviewList.innerHTML = `
+          <div class="review-item">
+            <span class="review-label">Name</span>
+            <span class="review-value">${escapeHTML(state.name)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Phone</span>
+            <span class="review-value">${escapeHTML(state.phone)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Email</span>
+            <span class="review-value">${escapeHTML(state.email)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Market</span>
+            <span class="review-value">${escapeHTML(state.market)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Requirement</span>
+            <span class="review-value">${escapeHTML(state.service)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Meeting Date</span>
+            <span class="review-value">${escapeHTML(state.dateLabel)}</span>
+          </div>
+          <div class="review-item">
+            <span class="review-label">Time</span>
+            <span class="review-value">${escapeHTML(state.time)}</span>
+          </div>
+        `;
+      }
+
+      function escapeHTML(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, function(m) {
+          if (m === '&') return '&amp;';
+          if (m === '<') return '&lt;';
+          if (m === '>') return '&gt;';
+          if (m === "'") return '&#39;';
+          if (m === '"') return '&quot;';
+          return m;
+        });
+      }
+
+      step5Back.addEventListener('click', function() {
+        showStep(4);
+      });
+
+      // ============================================================
+      // CONFIRM & WHATSAPP
+      // ============================================================
+      confirmBtn.addEventListener('click', function() {
+        // Build message
+        const message = `New IFX Marketing Lead
+
+Name: ${state.name}
+Phone: ${state.phone}
+Email: ${state.email}
+
+Market: ${state.market}
+Requirement: ${state.service}
+
+Meeting Date: ${state.dateLabel}
+Meeting Time: ${state.time}
+
+Source: IFX Marketing Landing Page`;
+
+        const whatsappURL = `${WHATSAPP_BASE}?text=${encodeURIComponent(message)}`;
+
+        // Open WhatsApp
+        window.open(whatsappURL, '_blank');
+
+        // Show success screen
+        waSuccessLink.href = whatsappURL;
+        showStep('success');
+      });
+
+      // ============================================================
+      // SUCCESS SCREEN
+      // ============================================================
+      backToWebsite.addEventListener('click', function() {
+        // Reset form state
+        state.name = '';
+        state.phone = '';
+        state.email = '';
+        state.market = '';
+        state.service = '';
+        state.date = null;
+        state.dateLabel = '';
+        state.time = '';
+
+        // Reset inputs
+        fullNameInput.value = '';
+        mobileInput.value = '';
+        emailInput.value = '';
+
+        // Reset market cards
+        marketCards.forEach(c => {
+          c.classList.remove('selected');
+          c.setAttribute('aria-pressed', 'false');
+        });
+        step2Btn.disabled = true;
+        step2Btn.style.opacity = '0.5';
+        step2Btn.style.cursor = 'not-allowed';
+
+        // Reset service grid
+        serviceGrid.innerHTML = '';
+
+        // Reset date/time
+        dateScroll.innerHTML = '';
+        timeGrid.innerHTML = '';
+        timeGrid.style.display = 'none';
+
+        // Go to step 1
+        showStep(1);
+      });
+
+      // ============================================================
+      // INIT
+      // ============================================================
+      showStep(1);
+
+      // Allow Enter key to trigger Continue on step 1
+      [fullNameInput, mobileInput, emailInput].forEach(input => {
+        input.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            step1Btn.click();
+          }
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
