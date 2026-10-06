@@ -18,7 +18,7 @@
             /* ==========================================================
                WhatsApp pre-fill message (stays hidden — only used in URL)
                ========================================================== */
-            const WA_MESSAGE = "Hii sir I want to discuss for Meta Ad";
+            const WA_MESSAGE = "Hi, I would like to know more about forex leads generation.";
 
             function waLink() {
                 return "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(WA_MESSAGE);
