@@ -1,858 +1,509 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>IFX Marketing · Trading & Fintech Agency</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
-  <!-- Font Awesome 6 (free) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    /* ----- CSS Variables & Reset ----- */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    :root {
-      --primary: #0EA5E9;
-      --secondary: #14B8A6;
-      --dark: #111827;
-      --light: #FFFFFF;
-      --bg-light: #f5f9ff;
-      --font-inter: 'Inter', sans-serif;
-      --font-poppins: 'Poppins', sans-serif;
-      --shadow-sm: 0 8px 20px rgba(0, 0, 0, 0.02), 0 2px 6px rgba(0, 0, 0, 0.01);
-      --shadow-md: 0 20px 40px -12px rgba(0, 0, 0, 0.06);
-      --radius-xl: 28px;
-      --radius-lg: 20px;
-      --transition: 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: var(--font-inter);
-      background: var(--bg-light);
-      color: var(--dark);
-      line-height: 1.5;
-      overflow-x: hidden;
-    }
-
-    h1, h2, h3 {
-      font-family: var(--font-poppins);
-      letter-spacing: -0.02em;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ----- Top Header (light bar) ----- */
-    .top-header {
-      background: var(--light);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.03);
-      padding: 10px 0;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .top-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 8px 16px;
-    }
-
-    .logo-text {
-      font-family: var(--font-poppins);
-      font-weight: 700;
-      font-size: 1.3rem;
-      color: var(--dark);
-      letter-spacing: -0.3px;
-    }
-
-    .logo-text span {
-      color: var(--primary);
-    }
-
-    .work-hours {
-      font-size: 0.78rem;
-      color: #4b5563;
-      background: #f1f5f9;
-      padding: 4px 16px;
-      border-radius: 30px;
-      white-space: nowrap;
-    }
-
-    .social-icons a {
-      color: #6b7280;
-      margin: 0 6px;
-      font-size: 0.95rem;
-      transition: color 0.2s;
-      text-decoration: none;
-    }
-
-    .social-icons a:hover {
-      color: var(--primary);
-    }
-
-    /* ----- Navbar (sticky + blur) ----- */
-    .navbar {
-      background: rgba(255, 255, 255, 0.75);
-      backdrop-filter: blur(14px) saturate(180%);
-      -webkit-backdrop-filter: blur(14px) saturate(180%);
-      box-shadow: var(--shadow-sm);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      padding: 14px 0;
-      transition: padding 0.25s, box-shadow 0.25s;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    }
-
-    .navbar.scrolled {
-      padding: 8px 0;
-      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.04);
-    }
-
-    .navbar .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--dark);
-      transition: color 0.2s;
-      position: relative;
-    }
-
-    .nav-links a::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: var(--primary);
-      transition: width 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-    }
-
-    .hamburger span {
-      width: 26px;
-      height: 2.5px;
-      background: var(--dark);
-      border-radius: 4px;
-      transition: 0.3s;
-    }
-
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
-
-    /* ----- Hero Section ----- */
-    .hero {
-      padding: 40px 0 50px;
-      position: relative;
-      background: var(--bg-light);
-      overflow: hidden;
-    }
-
-    /* floating abstract shapes */
-    .hero-shapes {
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .hero-shapes .shape {
-      position: absolute;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(14, 165, 233, 0.06), transparent 70%);
-      filter: blur(50px);
-    }
-
-    .shape-1 {
-      width: 400px;
-      height: 400px;
-      top: -120px;
-      right: -100px;
-    }
-
-    .shape-2 {
-      width: 300px;
-      height: 300px;
-      bottom: -60px;
-      left: -80px;
-      background: radial-gradient(circle, rgba(20, 184, 166, 0.06), transparent 70%);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      align-items: center;
-      position: relative;
-      z-index: 2;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      background: rgba(14, 165, 233, 0.08);
-      color: var(--primary);
-      padding: 6px 22px;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.3px;
-      margin-bottom: 20px;
-      backdrop-filter: blur(4px);
-    }
-
-    .hero h1 {
-      font-size: clamp(2.5rem, 5vw, 4rem);
-      line-height: 1.1;
-      margin-bottom: 18px;
-      font-weight: 700;
-    }
-
-    .hero h1 .highlight {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .hero p {
-      font-size: 1.05rem;
-      color: #374151;
-      max-width: 500px;
-      margin-bottom: 28px;
-      line-height: 1.7;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 32px;
-      border-radius: 60px;
-      font-weight: 600;
-      border: none;
-      background: var(--light);
-      color: var(--dark);
-      box-shadow: var(--shadow-sm);
-      transition: 0.2s;
-      cursor: pointer;
-      text-decoration: none;
-      font-size: 0.95rem;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-      box-shadow: 0 8px 24px rgba(14, 165, 233, 0.25);
-    }
-
-    .btn-primary:hover {
-      background: #0c8fc9;
-      transform: translateY(-2px);
-      box-shadow: 0 12px 28px rgba(14, 165, 233, 0.3);
-    }
-
-    .btn-outline {
-      border: 1.5px solid #e2e8f0;
-      background: transparent;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--primary);
-      background: rgba(14, 165, 233, 0.02);
-      transform: translateY(-2px);
-    }
-
-    /* hero right image */
-    .hero-image-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .hero-image {
-      width: 100%;
-      max-width: 520px;
-      aspect-ratio: 1/0.85;
-      border-radius: var(--radius-xl);
-      background: #e2e8f0;
-      background-image: url('/ifx.jpeg');
-      background-size: cover;
-      background-position: center;
-      box-shadow: var(--shadow-md);
-      transition: transform 0.4s;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    /* ----- Trust Section ----- */
-    .trust {
-      padding: 40px 0;
-      background: var(--light);
-      text-align: center;
-      border-top: 1px solid rgba(0, 0, 0, 0.02);
-    }
-
-    .trust h3 {
-      font-weight: 500;
-      color: #4b5563;
-      font-size: 1rem;
-      letter-spacing: 0.5px;
-      margin-bottom: 28px;
-    }
-
-    .logo-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 28px 48px;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    .logo-item {
-      font-weight: 600;
-      color: #94a3b8;
-      font-size: 1.1rem;
-      letter-spacing: 0.5px;
-      padding: 6px 12px;
-      transition: 0.3s;
-      filter: grayscale(1) opacity(0.6);
-    }
-
-    .logo-item:hover {
-      filter: grayscale(0) opacity(1);
-      color: var(--dark);
-      transform: scale(1.06);
-    }
-
-    /* ----- CTA (bottom) ----- */
-    .cta-section {
-      padding: 40px 0 50px;
-      background: var(--light);
-    }
-
-    .cta-card {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      border-radius: var(--radius-xl);
-      padding: 40px 30px;
-      color: white;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-      box-shadow: 0 20px 40px -12px rgba(14, 165, 233, 0.25);
-    }
-
-    .cta-card h2 {
-      font-size: clamp(1.6rem, 3vw, 2.4rem);
-      font-weight: 600;
-    }
-
-    .cta-card .btn {
-      background: white;
-      color: var(--dark);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    }
-
-    .cta-card .btn-outline {
-      background: transparent;
-      border-color: rgba(255, 255, 255, 0.4);
-      color: white;
-    }
-
-    .cta-card .btn-outline:hover {
-      background: rgba(255, 255, 255, 0.1);
-      border-color: white;
-    }
-
-    /* ----- Footer (minimal) ----- */
-    .footer {
-      background: var(--dark);
-      color: #cbd5e1;
-      padding: 30px 0 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.02);
-    }
-
-    .footer .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-      align-items: center;
-    }
-
-    .footer .logo-text {
-      color: white;
-      font-size: 1.2rem;
-    }
-
-    .footer .logo-text span {
-      color: var(--primary);
-    }
-
-    .footer a {
-      color: #94a3b8;
-      text-decoration: none;
-      transition: 0.2s;
-      font-size: 0.9rem;
-    }
-
-    .footer a:hover {
-      color: white;
-    }
-
-    .footer .social-icons a {
-      color: #94a3b8;
-      margin-left: 12px;
-    }
-
-    .footer .social-icons a:hover {
-      color: white;
-    }
-
-    .footer .copy {
-      font-size: 0.8rem;
-      color: #64748b;
-      width: 100%;
-      text-align: center;
-      margin-top: 16px;
-      border-top: 1px solid #2d3748;
-      padding-top: 16px;
-    }
-
-    /* ----- Responsive ----- */
-    @media (max-width: 992px) {
-      .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .hero p {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .hero-buttons {
-        justify-content: center;
-      }
-
-      .hero-image {
-        max-width: 400px;
-        margin: 0 auto;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .top-header .work-hours {
-        display: none;
-      }
-
-      .nav-links {
-        display: none;
-        flex-direction: column;
-        background: rgba(255, 255, 255, 0.96);
-        backdrop-filter: blur(12px);
-        padding: 20px;
-        border-radius: var(--radius-lg);
-        position: absolute;
-        top: 64px;
-        left: 16px;
-        right: 16px;
-        box-shadow: var(--shadow-md);
-        gap: 14px;
-      }
-
-      .nav-links.open {
-        display: flex;
-      }
-
-      .hamburger {
-        display: flex;
-      }
-
-      .cta-card {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .logo-grid {
-        gap: 16px 24px;
-      }
-
-      .logo-item {
-        font-size: 0.9rem;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .btn {
-        padding: 12px 22px;
-        font-size: 0.85rem;
-      }
-
-      .container {
-        padding: 0 16px;
-      }
-    }
-
-    /* fade-up helper (JS adds class) */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* floating animation for shapes */
-    @keyframes floatShape {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-16px) rotate(2deg); }
-    }
-
-    .floating {
-      animation: floatShape 7s ease-in-out infinite;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-947Q38W8LR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-947Q38W8LR');
-</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+    <title>IFX Marketing | High-Quality Forex &amp; Trading Leads</title>
+    <meta name="description"
+        content="Generate high-quality Forex and trading leads with targeted digital lead generation campaigns for brokers, IB, advisory, algo and copy-trading businesses.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0B1220">
+    <link rel="canonical" href="https://ifxmarketing.com/">
+    <link rel="stylesheet" href="css.css">
+
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230B1220'/%3E%3Cpath d='M9 23V9h13.2v3.3h-9.4v2.6H21v3.3h-8.2V23z' fill='%2338BDF8'/%3E%3C/svg%3E">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="IFX Marketing">
+    <meta property="og:title" content="IFX Marketing | High-Quality Forex &amp; Trading Leads">
+    <meta property="og:description"
+        content="Targeted lead generation for Forex brokers, IB, advisory, algo and copy-trading businesses.">
+    <meta property="og:url" content="https://ifxmarketing.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="IFX Marketing | High-Quality Forex &amp; Trading Leads">
+    <meta name="twitter:description"
+        content="Targeted lead generation for Forex brokers, IB, advisory, algo and copy-trading businesses.">
+
+    <style>
+       
+    </style>
 </head>
+
 <body>
 
-  <!-- ===== TOP HEADER ===== -->
-  <!-- <header class="top-header">
-    <div class="container">
-      <div class="logo-text">IFX <span>Marketing</span></div>
-      <div class="work-hours"><i class="far fa-clock"></i> Monday – Saturday · 9 AM – 5 PM</div>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </div>
-  </header> -->
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="container header__inner">
 
-  <!-- ===== NAVBAR ===== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <div class="logo-text" style="font-size:1.4rem;">IFX <span>Marketing</span></div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
+            <a href="#home" class="brand" aria-label="IFX Marketing home">
+                <span class="brand__mark" aria-hidden="true">IFX</span>
+                <span class="brand__text">ifxmarketing.com</span>
+            </a>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <div class="hero-shapes">
-      <div class="shape shape-1 floating"></div>
-      <div class="shape shape-2 floating" style="animation-delay:2s;"></div>
-    </div>
-    <div class="container hero-grid">
-      <div class="hero-left">
-        <span class="hero-badge"><i class="fas fa-chart-line"></i> Marketing That Moves the Markets</span>
-        <h1>
-          Fueling <span class="highlight">Growth</span> for <span class="highlight">Forex</span><br />
-          &amp; Stock Broking Brands
-        </h1>
-        <p>
-          At IFX Marketing, we specialize in digital marketing crafted exclusively , investment advisory, forex, and fintech brands. We generate high-quality leads, build credibility, and help businesses scale while staying compliant.
-        </p>
-        <div class="hero-buttons">
-          <a href="tel:+917446345817" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book a Call</a>
-          <a href="#" class="btn btn-outline"><i class="fas fa-file-invoice"></i> Book a Quote</a>
+            <div class="header__actions">
+                <nav class="header__nav" aria-label="Main navigation">
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <a class="header__wa" href="#" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.18 8.18 0 01-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 012.41 5.83c0 4.54-3.7 8.2-8.24 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.28z" />
+                    </svg>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="hero-image-wrapper">
-        <div class="hero-image"> <img src="/WhatsApp Image 2026-08-25 at 5.13.59 PM (1).jpeg" alt=""></div>
-      </div>
-    </div>
-  </section>
+    </header>
 
-  <!-- ===== TRUST SECTION ===== -->
-  <section class="trust">
-    <div class="container">
-      <h3>Trusted by more than 200+ companies across the globe</h3>
-      <div class="logo-grid">
-        <span class="logo-item">Binance</span>
-        <span class="logo-item">Coinbase</span>
-        <span class="logo-item">MetaTrader</span>
-        <span class="logo-item">Robinhood</span>
-        <span class="logo-item">FXCM</span>
-        <span class="logo-item">Saxo Bank</span>
-        <span class="logo-item">eToro</span>
-        <span class="logo-item">Plus500</span>
-        <span class="logo-item">Interactive Brokers</span>
-        <span class="logo-item">TD Ameritrade</span>
-      </div>
-    </div>
-  </section>
+    <main>
 
-  <!-- ===== CTA SECTION (large rounded image + CTA card) ===== -->
-  <section class="cta-section">
-    <div class="container">
-      <!-- large rounded image placeholder -->
-      <div style="width:100%; aspect-ratio:16/6; border-radius:var(--radius-xl); background:#e2e8f0; margin-bottom:40px; background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop'); background-size:cover;/ background-position:center; box-shadow:var(--shadow-md); border:1px solid rgba(255,255,255,0.2);"></div>
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="home">
+            <div class="container hero__grid">
 
-      <!-- CTA card -->
-      <div class="cta-card fade-up">
-        <div>
-          <h2>Ready to accelerate your brand?</h2>
-          <p style="opacity:0.85; margin-top:4px;">Let's build a strategy that delivers results.</p>
+                <div class="hero__copy">
+                    <p class="eyebrow">Forex &amp; Trading Lead Generation</p>
+                    <h1>High-Quality <span class="grad">Forex &amp; Trading</span> Leads</h1>
+                    <p class="hero__sub">We generate targeted, high-quality leads for businesses across the Forex and
+                        trading industry.</p>
+                    <p class="hero__note">Quality-focused lead generation designed to connect your business with
+                        relevant prospects.</p>
+
+                    <a href="#lead-form" class="btn btn--sky hero__cta">Get Qualified Leads</a>
+
+                    <p class="hero__trust">IB Broker • Advisory • Algo • Copy-Trading • Platforms</p>
+                </div>
+
+                <!-- HERO LEAD FORM -->
+                <div class="hero__form" id="lead-form">
+                    <div class="card-form">
+                        <form data-lead-form novalidate>
+                            <div class="form__body">
+                                <h2 class="form__title">
+                                    <small>Free Consultation</small>
+                                    Let’s Discuss Your Lead Requirements
+                                </h2>
+
+                                <div class="field">
+                                    <label for="name-1">Full Name</label>
+                                    <input class="input" id="name-1" name="name" type="text" autocomplete="name"
+                                        placeholder="Enter your full name" required>
+                                    <span class="error" data-error="name" aria-live="polite"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label for="phone-1">Phone Number</label>
+                                    <input class="input" id="phone-1" name="phone" type="tel" inputmode="numeric"
+                                        autocomplete="tel" maxlength="10" placeholder="10-digit mobile number" required>
+                                    <span class="error" data-error="phone" aria-live="polite"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label for="segment-1">Select Your Segment</label>
+                                    <select class="input" id="segment-1" name="segment" required>
+                                        <option value="">-- Choose your segment --</option>
+                                        <option value="IB Broker">IB Broker</option>
+                                        <option value="Advisory">Advisory</option>
+                                        <option value="Algo Trading">Algo Trading</option>
+                                        <option value="Copy Trading">Copy Trading</option>
+                                        <option value="Forex Broker">Forex Broker</option>
+                                        <option value="Signals Provider">Signals Provider</option>
+                                        <option value="Trading Platform">Trading Platform</option>
+                                        <option value="Prop Firm">Prop Firm</option>
+                                        <option value="Investment Services">Investment Services</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span class="error" data-error="segment" aria-live="polite"></span>
+                                </div>
+
+                                <button class="btn btn--sky btn--block" type="submit">Get Started</button>
+
+                                <p class="form__small">Your information is used only to contact you regarding our lead
+                                    generation services.</p>
+                                <p class="form__status" data-status role="status" aria-live="polite"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= SERVICES ================= -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Market Segments</p>
+                    <h2>Forex &amp; Trading Lead Generation</h2>
+                    <p class="section__sub">Targeted lead generation across the major Forex and trading market segments.
+                    </p>
+                </div>
+
+                <div class="grid grid--3">
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 17l5-5 4 3 8-8" />
+                                <path d="M15 7h5v5" />
+                            </svg>
+                        </span>
+                        <h3>IB Brokers</h3>
+                        <p>Targeted prospects for Introducing Brokers and partner programs.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 4L2 9l10 5 10-5-10-5z" />
+                                <path d="M5 11.5V16c0 1.7 3.1 3 7 3s7-1.3 7-3v-4.5" />
+                            </svg>
+                        </span>
+                        <h3>Advisory</h3>
+                        <p>Leads for legitimate advisory and consultation services.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="4" width="16" height="16" rx="3" />
+                                <rect x="9" y="9" width="6" height="6" rx="1" />
+                                <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
+                            </svg>
+                        </span>
+                        <h3>Algo Trading</h3>
+                        <p>Leads interested in algorithmic and automated trading solutions.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 8l8-4 8 4-8 4-8-4z" />
+                                <path d="M4 12l8 4 8-4" />
+                                <path d="M4 16l8 4 8-4" />
+                            </svg>
+                        </span>
+                        <h3>Copy Trading</h3>
+                        <p>Prospects interested in copy trading and mirror trading platforms.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="13" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </span>
+                        <h3>Trading Platforms</h3>
+                        <p>Lead generation for trading platforms and related services.</p>
+                    </article>
+
+                    <article class="card">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 12h4l2-6 4 12 2-6h6" />
+                            </svg>
+                        </span>
+                        <h3>Signals &amp; Prop Firms</h3>
+                        <p>Leads for signals providers, prop firms and trading services.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= WHY ================= -->
+        <section class="section section--alt" id="why">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Our Approach</p>
+                    <h2>Why Businesses Choose Our Lead Generation</h2>
+                    <p class="section__sub">A structured, quality-first process built around your business requirements.
+                    </p>
+                </div>
+
+                <div class="grid grid--2">
+
+                    <div class="feature">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9" />
+                                <circle cx="12" cy="12" r="5" />
+                                <circle cx="12" cy="12" r="1.4" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Quality Focused</h3>
+                            <p>We focus on relevance and lead quality rather than simply generating large volumes of
+                                random contacts.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 7h16M4 12h16M4 17h16" />
+                                <circle cx="9" cy="7" r="2.2" />
+                                <circle cx="15" cy="12" r="2.2" />
+                                <circle cx="8" cy="17" r="2.2" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Targeted Campaigns</h3>
+                            <p>Campaigns can be structured around specific markets, audiences and business requirements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13 2L4.5 13.2H11l-1 8.8 8.5-11.2H12l1-8.8z" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Fast Lead Delivery</h3>
+                            <p>Leads can be delivered through your preferred workflow.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span class="card__icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 17l6-6 4 4 8-8" />
+                                <path d="M14 7h7v7" />
+                            </svg>
+                        </span>
+                        <div>
+                            <h3>Conversion Focused</h3>
+                            <p>Landing pages and campaigns are designed with lead conversion in mind.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROCESS ================= -->
+        <section class="section" id="process">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Simple Process</p>
+                    <h2>How It Works</h2>
+                </div>
+
+                <div class="steps">
+                    <div class="step">
+                        <span class="step__num">01 — Understand</span>
+                        <p>We understand your target market, location and lead requirements.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__num">02 — Generate</span>
+                        <p>We run targeted digital campaigns to attract relevant prospects.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__num">03 — Deliver</span>
+                        <p>Qualified leads are delivered through the agreed lead delivery system.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA ================= -->
+        <section class="cta-band">
+            <div class="container">
+                <h2>Looking for High-Quality Forex Leads?</h2>
+                <p>Tell us your target market and lead requirements. Our team will get in touch with you.</p>
+                <a href="#lead-form" class="btn btn--sky">Get Started</a>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT ================= -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section__head">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Let’s Grow Your Lead Pipeline</h2>
+                    <p class="section__sub">Share your details and our team will reach out to discuss your requirements.
+                    </p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="card-form">
+                        <form data-lead-form novalidate>
+                            <div class="form__body">
+                                <h2 class="form__title">
+                                    <small>Get In Touch</small>
+                                    Request a Callback
+                                </h2>
+
+                                <div class="field">
+                                    <label for="name-2">Full Name</label>
+                                    <input class="input" id="name-2" name="name" type="text" autocomplete="name"
+                                        placeholder="Enter your full name" required>
+                                    <span class="error" data-error="name" aria-live="polite"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label for="phone-2">Phone Number</label>
+                                    <input class="input" id="phone-2" name="phone" type="tel" inputmode="numeric"
+                                        autocomplete="tel" maxlength="10" placeholder="10-digit mobile number" required>
+                                    <span class="error" data-error="phone" aria-live="polite"></span>
+                                </div>
+
+                                <div class="field">
+                                    <label for="segment-2">Select Your Segment</label>
+                                    <select class="input" id="segment-2" name="segment" required>
+                                        <option value="">-- Choose your segment --</option>
+                                        <option value="IB Broker">IB Broker</option>
+                                        <option value="Advisory">Advisory</option>
+                                        <option value="Algo Trading">Algo Trading</option>
+                                        <option value="Copy Trading">Copy Trading</option>
+                                        <option value="Forex Broker">Forex Broker</option>
+                                        <option value="Signals Provider">Signals Provider</option>
+                                        <option value="Trading Platform">Trading Platform</option>
+                                        <option value="Prop Firm">Prop Firm</option>
+                                        <option value="Investment Services">Investment Services</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <span class="error" data-error="segment" aria-live="polite"></span>
+                                </div>
+
+                                <button class="btn btn--sky btn--block" type="submit">Get Started</button>
+
+                                <p class="form__small">Your information is used only to contact you regarding our lead
+                                    generation services.</p>
+                                <p class="form__status" data-status role="status" aria-live="polite"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__brand">
+                <span class="brand__mark" aria-hidden="true">IFX</span>
+                <span class="brand__text">ifxmarketing.com</span>
+            </p>
+            <p class="footer__tagline">Professional Lead Generation for Forex &amp; Trading Businesses</p>
+
+            <nav class="footer__links" aria-label="Footer navigation">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <p class="footer__disclaimer">
+                We provide digital marketing and lead generation services. We do not provide investment advice or
+                guarantee trading results.
+            </p>
+
+            <p class="footer__copy">© <span data-year>2025</span> IFX Marketing. All rights reserved.</p>
         </div>
-        <div style="display:flex; gap:12px; flex-wrap:wrap;">
-          <a href="tel:+917446345817" class="btn"><i class="fas fa-phone-alt"></i> Book a Call</a>
-          <a href="#" class="btn btn-outline"><i class="fas fa-file-invoice"></i> Get Quote</a>
+    </footer>
+
+    <!-- ================= FLOATING WHATSAPP ================= -->
+    <a class="wa-float" href="#" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path
+                d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.18 8.18 0 01-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 012.41 5.83c0 4.54-3.7 8.2-8.24 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.28z" />
+        </svg>
+    </a>
+
+    <!-- ================= SUCCESS MODAL ================= -->
+    <div class="modal" data-modal aria-hidden="true">
+        <div class="modal__backdrop" data-modal-close></div>
+
+        <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+            <button class="modal__close" type="button" data-modal-close aria-label="Close">✕</button>
+
+            <div class="modal__circle-wrap">
+                <span class="modal__ripple" aria-hidden="true"></span>
+                <div class="modal__circle">
+                    <svg class="modal__check" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                </div>
+            </div>
+
+            <h3 class="modal__title" id="modalTitle">Submitted successfully</h3>
+            <p class="modal__sub">IFX Market will connect you shortly</p>
+
+            <div class="modal__actions">
+                <a class="modal__btn modal__btn--wa" href="#" data-wa target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.18 8.18 0 01-1.25-4.35c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.81 2.41a8.16 8.16 0 012.41 5.83c0 4.54-3.7 8.2-8.24 8.2zm4.52-6.16c-.25-.12-1.47-.72-1.69-.8-.23-.09-.39-.13-.56.12-.16.25-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.17 1.71 2.62 4.15 3.67.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.47-.28z" />
+                    </svg>
+                    WhatsApp
+                </a>
+
+                <a class="modal__btn modal__btn--call" href="#" data-call>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                        stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.8 19.8 0 012.12 4.2 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.1 9.9a16 16 0 006 6l1.26-1.26a2 2 0 012.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0122 16.92z" />
+                    </svg>
+                    Call Now
+                </a>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container">
-      <div>
-        <div class="logo-text">IFX <span>Marketing</span></div>
-        <div style="margin-top:6px; font-size:0.85rem; color:#94a3b8;">
-          <a href="tel:+917446345817"><i class="fas fa-phone-alt"></i> +917446345817</a>
-        </div>
-      </div>
-      <div style="display:flex; gap:24px; flex-wrap:wrap;">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-      </div>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-      <div class="copy">© 2025 IFX Marketing. All rights reserved.</div>
-    </div>
-  </footer>
+    <!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+    <script src="js.js"></script>
 
-  <!-- WhatsApp Floating Button -->
-<a href="https://wa.me/+447446345817"
-   class="whatsapp-float"
-   target="_blank"
-   rel="noopener noreferrer">
+    <!-- ============================================================
+     GOOGLE APPS SCRIPT — यही code अपने Sheet के Script Editor में paste करो
+     ============================================================
 
-  <svg viewBox="0 0 32 32" class="whatsapp-icon">
-    <path fill="#fff" d="M19.11 17.21c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.86 1.06-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.15-1.33-.79-.7-1.33-1.56-1.49-1.83-.16-.27-.02-.42.12-.56.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.92 2.94 4.65 4.12.65.28 1.16.45 1.56.57.65.21 1.24.18 1.7.11.52-.08 1.6-.65 1.83-1.28.23-.63.23-1.17.16-1.28-.07-.11-.25-.18-.52-.32z"/>
-    <path fill="#fff" d="M16 3.2A12.8 12.8 0 0 0 5.04 22.62L3.2 28.8l6.34-1.8A12.8 12.8 0 1 0 16 3.2zm0 23.3c-2.01 0-3.87-.61-5.42-1.66l-.39-.26-3.76 1.07 1.09-3.66-.28-.4A10.47 10.47 0 1 1 16 26.5z"/>
-  </svg>
+function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Leads")
+              || SpreadsheetApp.getActiveSpreadsheet().insertSheet("Leads");
 
-</a>
-
-<style>
-.whatsapp-float {
-  position: fixed;
-  width: 58px;
-  height: 58px;
-  right: 22px;
-  bottom: 22px;
-  background: #25D366;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
-  z-index: 99999;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-icon {
-  width: 34px;
-  height: 34px;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
-}
-
-@media (max-width: 600px) {
-  .whatsapp-float {
-    width: 52px;
-    height: 52px;
-    right: 16px;
-    bottom: 16px;
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["Name","Phone","Segment","Date","Time","Page","Timestamp"]);
   }
 
-  .whatsapp-icon {
-    width: 30px;
-    height: 30px;
-  }
+  var p = e.parameter;
+  sheet.appendRow([
+    p.name || "",
+    p.phone || "",
+    p.segment || "",
+    p.date || "",
+    p.time || "",
+    p.page || "",
+    new Date()
+  ]);
+
+  return ContentService
+    .createTextOutput(JSON.stringify({ status: "success" }))
+    .setMimeType(ContentService.MimeType.JSON);
 }
-</style>
 
-  <!-- ===== JAVASCRIPT ===== -->
-  <script>
-    (function() {
-      "use strict";
+============================================================ -->
 
-      // --- Navbar blur on scroll ---
-      const navbar = document.getElementById('navbar');
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 30) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-
-      // --- Hamburger toggle ---
-      const hamburger = document.getElementById('hamburger');
-      const navLinks = document.getElementById('navLinks');
-
-      hamburger.addEventListener('click', function() {
-        this.classList.toggle('active');
-        navLinks.classList.toggle('open');
-      });
-
-      // Close menu on link click (mobile)
-      navLinks.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-          hamburger.classList.remove('active');
-          navLinks.classList.remove('open');
-        });
-      });
-
-      // --- Fade Up on scroll (Intersection Observer) ---
-      const fadeElements = document.querySelectorAll('.fade-up');
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -30px 0px'
-      });
-
-      fadeElements.forEach(el => observer.observe(el));
-
-      // Also observe hero elements manually (hero badge, heading etc)
-      const heroItems = document.querySelectorAll('.hero-left .hero-badge, .hero-left h1, .hero-left p, .hero-buttons');
-      heroItems.forEach((item, index) => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(24px)';
-        item.style.transition = `opacity 0.7s ease ${index * 0.1}s, transform 0.7s ease ${index * 0.1}s`;
-        setTimeout(() => {
-          item.style.opacity = '1';
-          item.style.transform = 'translateY(0)';
-        }, 200 + index * 100);
-      });
-
-      // Hero image fade
-      const heroImg = document.querySelector('.hero-image');
-      if (heroImg) {
-        heroImg.style.opacity = '0';
-        heroImg.style.transition = 'opacity 1s ease 0.3s';
-        setTimeout(() => { heroImg.style.opacity = '1'; }, 400);
-      }
-
-      // --- smooth hover for buttons (magnetic light effect) ---
-      document.querySelectorAll('.btn').forEach(btn => {
-        btn.addEventListener('mousemove', (e) => {
-          const rect = btn.getBoundingClientRect();
-          const x = e.clientX - rect.left - rect.width / 2;
-          const y = e.clientY - rect.top - rect.height / 2;
-          btn.style.transform = `translate(${x * 0.08}px, ${y * 0.08}px)`;
-        });
-        btn.addEventListener('mouseleave', () => {
-          btn.style.transform = '';
-        });
-      });
-
-    })();
-  </script>
 </body>
+
 </html>
